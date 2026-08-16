@@ -58,9 +58,9 @@ func Unescape(s string) string {
 				}
 			}
 			b.WriteRune('\\')
-		case '0':
-			// \0NNN 最多三位八进制
-			j := i + 2
+		case '0', '1', '2', '3', '4', '5', '6', '7':
+			// \NNN / \0NNN 最多三位八进制，和 Go 字符串转义一致（\101 即 'A'）
+			j := i + 1
 			val := 0
 			cnt := 0
 			for cnt < 3 && j < len(runes) && runes[j] >= '0' && runes[j] <= '7' {

@@ -1,8 +1,0 @@
-﻿go.exe : go: warning: "./..." matched no packages
-所在位置 C:\Users\ASUS\AppData\Local\Temp\genie-ps-1786852971288-ysrpoz.ps1:262 字符: 345
-+ ... n $names) { & "C:\Program Files\Go\bin\go.exe" test ./... 2>&1 | Out- ...
-+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (go: warning: "./..." matched no packages:String) [], RemoteException
-    + FullyQualifiedErrorId : NativeCommandError
- 
-no packages to test
